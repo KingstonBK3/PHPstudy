@@ -38,17 +38,20 @@ function evennumbermass($randm){
 		print_r($randm);
 	}
 }
-
-
 function maxmass($randm){
-	echo max($randm);
+	
+}
+function minmass($randm){
+	
+}
+function avrminmax($randm){
+	
 }*/
 function sortmax($randm){
 	asort($randm);
 	foreach ($randm as $key => $value)
 	{
 	echo 'Sortmax:'.$value. '<br>';
-	print_r($randm);
 	}
 	echo '<hr>';
 }
@@ -57,7 +60,6 @@ function sortmin($randm){
 	foreach ($randm as $key => $value)
 	{
 	echo 'Sortmin:'.$value. '<br>';
-	print_r($randm);
 	}
 	echo '<hr>';
 }
@@ -67,6 +69,8 @@ summmass($randm);
 averagemass($randm);
 //evennumbermass($randm);
 //maxmass($randm);
+//minmass($randm);
+//avrminmax($randm);
 sortmax($randm);
 sortmin($randm);
 ?>
