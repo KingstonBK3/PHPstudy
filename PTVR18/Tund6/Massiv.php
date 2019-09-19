@@ -30,14 +30,15 @@ function averagemass($randm){
 	$arv=array_sum($randm)/10;
 	echo '<br>Average:',$arv,'<hr>';
 }
-/*
-
 function evennumbermass($randm){
-	if (){
-		echo "<br>Even number:";
-		print_r($randm);
+	$randm=array(2,4,6,8,10,12,14,16,18,20);
+	foreach ($randm as $key => $value){
+		if ($value%2==0){
+			unset($randm[$key]);
+		}
 	}
-}
+	echo '<hr>';
+}/*
 function maxmass($randm){
 	
 }
@@ -67,7 +68,7 @@ $randm=randomass(1,20);
 outputmass($randm);
 summmass($randm);
 averagemass($randm);
-//evennumbermass($randm);
+evennumbermass($randm);
 //maxmass($randm);
 //minmass($randm);
 //avrminmax($randm);
