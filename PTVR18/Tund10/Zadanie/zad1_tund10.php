@@ -28,7 +28,6 @@
 		$line="$name|$group|$Tnumber\n";
 
 		file_put_contents("data.txt", $line, FILE_APPEND);
-		file_put_contents("data.php", $line, FILE_APPEND);
 	}
 	?>
 </body>
