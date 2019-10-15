@@ -32,15 +32,37 @@
 <input type="submit" value="Результат">
 <?php
 if (isset($_POST['Country']) and isset($_POST['East']) and isset($_POST['County']) and isset($_POST['CenterCounty']) and isset($_POST['City'])) {
+	$Name1=$_POST['Name'];
 	$Country=$_POST['Country'];
 	$East=$_POST['East'];
 	$County=$_POST['County'];
 	$CenterCounty=$_POST['CenterCounty'];
 	$City=$_POST['City'];
-
-	//$line="$Country|$East|$County|$CenterCounty|$City\n";
+	
+	$line="$Name1|$Country|$East|$County|$CenterCounty|$City\n";
 
 	echo $line;
+
+	if ($Country == 'Tallinn') {
+		$count +1;
+	}
+	elseif ($East == 'Russia') {
+		$count +1;
+	}
+	elseif ($County == 15) {
+		$count +1;
+	}
+	elseif ($CenterCounty == 'Johvi') {
+		$count +1;
+	}
+	elseif ($City == 'Narva') {
+		$count +1;
+	}                    
+	else {
+		$count -1;
+	}
+
+	echo $count;
 }
 ?>
 </form>
