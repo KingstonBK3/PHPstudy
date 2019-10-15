@@ -22,7 +22,7 @@
 <p>4)Какой центр уезда Ида-Вирумаа?</p>
 	<input type="radio" name="CenterCounty" value="Jogevamaa">a)Йыгевама
 	<input type="radio" name="CenterCounty" value="Rakvere">b)Раквере
-	<input type="radio" name="CenterCounty" value="Johvi">c)Йыхви
+	<input type="radio" name="CenterCounty" value="Jõhvi">c)Йыхви
 <p>5)3-ий по населению город в Эстонии?</p>
 	<input type="radio" name="City" value="Narva">a)Нарва
 	<input type="radio" name="City" value="Tallinn2">b)Таллинн
@@ -40,31 +40,53 @@ if (isset($_POST['Country']) and isset($_POST['East']) and isset($_POST['County'
 	$City=$_POST['City'];
 	
 	$line="$Name1|$Country|$East|$County|$CenterCounty|$City\n";
+	file_put_contents('rezultat.txt', $line, FILE_APPEND);
 
-	echo $line;
+	$CountA=0;
 
-	if ($Country == 'Tallinn') {
-		$count +1;
+	if ($Country == "Tallinn") {
+		$CountA = $CountA +1;
 	}
-	elseif ($East == 'Russia') {
-		$count +1;
+	elseif ($East == "Russia") {
+		$CountA = $CountA +1;
 	}
-	elseif ($County == 15) {
-		$count +1;
+	elseif ($County == "15") {
+		$CountA = $CountA +1;
 	}
-	elseif ($CenterCounty == 'Johvi') {
-		$count +1;
+	elseif ($CenterCounty == "Jõhvi") {
+		$CountA = $CountA +1;
 	}
-	elseif ($City == 'Narva') {
-		$count +1;
+	elseif ($City == "Narva") {
+		$CountA = $CountA +1;
 	}                    
-	else {
-		$count -1;
-	}
+	/*else {
+		$CountA -1;
+	}*/
 
-	echo $count;
+	//Полная дичь
 }
 ?>
+<hr>
+<table border="1">
+	<tr>
+		<td>Имя</td>
+		<td>1-ый вопрос</td>
+		<td>2-ой вопрос</td>
+		<td>3-ий вопрос</td>
+		<td>4-ый вопрос</td>
+		<td>5-ый вопрос</td>
+		<td>Общее кол-во правильных ответов:</td>
+	</tr>
+	<tr>
+		<td><?php echo $Name1; ?></td>
+		<td><?php echo $Country; ?></td>
+		<td><?php echo $East; ?></td>
+		<td><?php echo $County; ?></td>
+		<td><?php echo $CenterCounty; ?></td>
+		<td><?php echo $City; ?></td>
+		<td><?php echo $CountA; ?></td>
+	</tr>
+</table>
 </form>
 </body>
 </html>
