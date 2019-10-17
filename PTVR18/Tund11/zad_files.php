@@ -45,23 +45,23 @@ if (isset($_POST['Country']) and isset($_POST['East']) and isset($_POST['County'
 	$CountA=0;
 
 	if ($Country == "Tallinn") {
-		$CountA = $CountA +1;
+		$CountA = $CountA ++;
 	}
 	elseif ($East == "Russia") {
-		$CountA = $CountA +1;
+		$CountA = $CountA ++;
 	}
 	elseif ($County == "15") {
-		$CountA = $CountA +1;
+		$CountA = $CountA ++;
 	}
 	elseif ($CenterCounty == "Jõhvi") {
-		$CountA = $CountA +1;
+		$CountA = $CountA ++;
 	}
 	elseif ($City == "Narva") {
-		$CountA = $CountA +1;
+		$CountA = $CountA ++;
 	}                    
-	/*else {
-		$CountA -1;
-	}*/
+	else {
+		$CountA --;
+	}
 
 	//Полная дичь
 }

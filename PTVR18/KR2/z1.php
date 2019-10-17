@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <title>Задание 1. Погода</title>
