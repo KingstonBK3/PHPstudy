@@ -8,42 +8,42 @@
         <?php
         $books = [
             'Фантастика' => [
+                'Гарри Поттер и Кубок Огня' => [
+                    'Name' => 'Гарри Поттер и Кубок Огня',
+                    'Author' => 'Дж. К. Роулинг',
+                    'Price' => 20.9,
+                    'img' => 'potter.jpg',
+                ],
+                'Песнь льда и пламени' => [
+                    'Name' => 'Песнь льда и пламени',
+                    'Author' => 'Джордж Мартин',
+                    'Price' => 40.9,
+                    'img' => 'Pesen.jfif',
+                ],
                 'Властелин колец' => [
                     'Name' => 'Властелин колец',
                     'Author' => 'Джон Толкин',
-                    'Price' => 28.9,
+                    'Price' => 25.9,
                     'img' => 'Lord.jfif',
-                ],
-                'Дюна' => [
-                    'Name' => 'Дюна',
-                    'Author' => 'Фрэнк Герберт',
-                    'Price' => 17.18,
-                    'img' => 'Dune.jfif',
-                ],
-                'Песнь льда и огня' => [
-                    'Name' => 'Песнь льда и огня',
-                    'Author' => 'Джордж Мартин',
-                    'Price' => 30.17,
-                    'img' => 'Pesen.jfif',
                 ],
             ],
             'Роман' => [
                 'Метро 2033' => [
                     'Name' => 'Метро 2033',
                     'Author' => 'Дмитрий Глуховский',
-                    'Price' => 10.16,
+                    'Price' => 10.9,
                     'img' => 'Metro.jpg',
                 ],
                 'Метро 2034' => [
                     'Name' => 'Метро 2034',
                     'Author' => 'Дмитрий Глуховский',
-                    'Price' => 20.5,
+                    'Price' => 20.9,
                     'img' => 'Metro2.jfif',
                 ],
                 'Метро 2035' => [
                     'Name' => 'Метро 2035',
                     'Author' => 'Дмитрий Глуховский',
-                    'Price' => 40.17,
+                    'Price' => 40.9,
                     'img' => 'Metro3.jpg',
                 ],
             ],
@@ -57,13 +57,13 @@
                 'Ведьмак: Последнее желание' => [
                     'Name' => 'Ведьмак: Последнее желание',
                     'Author' => 'Анджей Сапковский',
-                    'Price' => 40.18,
+                    'Price' => 35.9,
                     'img' => 'Witcher2.jpg',
                 ],
                 'Ведьмак: Меч предназначения' => [
                     'Name' => 'Ведьмак: Меч предназначения',
                     'Author' => 'Анджей Сапковский',
-                    'Price' => 89.17,
+                    'Price' => 40.9,
                     'img' => 'Witche3.jpg',
                 ],
             ],
@@ -71,9 +71,6 @@
         ?>
         <?php
         function viewMenu($arr){
-            foreach ($arr as $key => $value) {
-                echo " <a href='Kromski.php?category={$key}'>{$key}</a>";
-            }
             echo "<form method='post'>Поиск по автору: <input type='search' name='search'><input type='submit' value='Поиск'></form>";
             echo "<form method='get'>
             <input type='text' name='user_price'>
@@ -100,7 +97,7 @@
                                                 <img src='img/{$v['img']}' width='200px'>
                                                 <br><br>
                                                 <p>Цена: <span style='color:red;'><b>{$v['Price']}</b></span>$</p>
-                                                <a href='Kromski.php?book={$k}'>Купить</a>
+                                                <a>Купить</a>
                                                 </div>";                        
                                             }
                                         }
@@ -113,7 +110,7 @@
                                                 <img src='img/{$v['img']}' width='200px'>
                                                 <br><br>
                                                 <p>Цена: <span style='color:red;'><b>{$v['Price']}</b></span>$</p>
-                                                <a href='Kromski.php?book={$k}'>Купить</a>
+                                                <a>Купить</a>
                                                 </div>";                        
                                             }
                                         }
@@ -132,7 +129,7 @@
                                             <img src='img/{$v['img']}' width='200px'>
                                             <br><br>
                                             <p>Цена: <span style='color:red;'><b>{$v['Price']}</b></span>$</p>
-                                            <a href='Kromski.php?book={$k}'>Купить</a>
+                                            <a>Купить</a>
                                             </div>";
                                         }
                                     }elseif ($_GET['user_price_variable'] == 'More'){
@@ -143,7 +140,7 @@
                                             <img src='img/{$v['img']}' width='200px'>
                                             <br><br>
                                             <p>Цена: <span style='color:red;'><b>{$v['Price']}</b></span>$</p>
-                                            <a href='Kromski.php?book={$k}'>Купить</a>
+                                            <a>Купить</a>
                                             </div>";
                                         }
                                     }
@@ -163,7 +160,7 @@
                                             <img src='img/{$v['img']}' width='200px'>
                                             <br><br>
                                             <p>Цена: <span style='color:red;'><b>{$v['Price']}</b></span>$</p>
-                                            <a href='Kromski.php?book={$k}'>Купить</a>
+                                            <a>Купить</a>
                                             </div>";
                                         }
                                     }   
@@ -175,7 +172,7 @@
                                         <img src='img/{$v['img']}' width='200px'>
                                         <br><br>
                                         <p>Цена: <span style='color:red;'><b>{$v['Price']}</b></span>$</p>
-                                        <a href='Kromski.php?book={$k}'>Купить</a>
+                                        <a>Купить</a>
                                         </div>";
                                     }
                                 }
@@ -194,7 +191,7 @@
                                         <img src='img/{$v['img']}' width='200px'>
                                         <br><br>
                                         <p>Цена: <span style='color:red;'><b>{$v['Price']}</b></span>$</p>
-                                        <a href='Kromski.php?book={$k}'>Купить</a>
+                                        <a>Купить</a>
                                         </div>";                        
                                     }
                                 }
@@ -208,7 +205,7 @@
                                     <img src='img/{$v['img']}' width='200px'>
                                     <br><br>
                                     <p>Цена: <span style='color:red;'><b>{$v['Price']}</b></span>$</p>
-                                    <a href='Kromski.php?book={$k}'>Купить</a>
+                                    <a>Купить</a>
                                     </div>";
                                 }
                             }
@@ -225,7 +222,7 @@
                                             <img src='img/{$v['img']}' width='200px'>
                                             <br><br>
                                             <p>Цена: <span style='color:red;'><b>{$v['Price']}</b></span>$</p>
-                                            <a href='Kromski.php?book={$k}'>Купить</a>
+                                            <a>Купить</a>
                                             </div>";
                                         }
                                     }   
@@ -237,7 +234,7 @@
                                         <img src='img/{$v['img']}' width='200px'>
                                         <br><br>
                                         <p>Цена: <span style='color:red;'><b>{$v['Price']}</b></span>$</p>
-                                        <a href='Kromski.php?book={$k}'>Купить</a>
+                                        <a>Купить</a>
                                         </div>";
                                     }
                                 }
@@ -254,7 +251,6 @@
         <div class="row">
             <div class="col-md-12 menuAll">
                 <?php
-                echo "<a href='Kromski.php'>Все</a>";
                 viewMenu($books);
                 ?>               
             </div>
@@ -262,6 +258,7 @@
         <div class="row">
             <?php
                 viewBook($books);
+                /*Не доделал дизайн и ссылки!!!!!!!!!!!!!*/
             ?>
         </div>
     </body>

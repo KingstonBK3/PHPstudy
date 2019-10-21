@@ -1,9 +1,9 @@
 
 <html>
     <head>
-        <title>Задание 1. Погода</title>
+        <title>Задание 1</title>
         <link rel="stylesheet" href="css/style.css" type="text/css"/>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
     <?php
@@ -27,7 +27,6 @@
 		echo "<br>";
 		}
 	}
-
 	function averageValue($arr){
 		$average_value = 0;
 		foreach ($arr as $key => $value) {
@@ -41,7 +40,7 @@
 		}
 		$average_value = $average_value / count($arr);
 		$average_value = round($average_value,2);
-		echo "<h4 style='color:red;'>Аverage value = {$average_value}C</h4>";
+		echo "<h4 style='color:blue;'>Средняя температура: {$average_value}C</h4>";
 	}
 	function search($arr){
 		if($_POST['search_form'] != 'Все'){

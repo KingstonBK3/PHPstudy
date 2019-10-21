@@ -1,4 +1,0 @@
-Tallinn|434 562|Tallinn.jpg|Harjumaa
-Tartu|93 124|Tartu.png|Tartumaa
-Narva|57 842|Narva.jpg|Parnumaa
-Parnu|50 643[|Parnu.jpg|Parnumaa
