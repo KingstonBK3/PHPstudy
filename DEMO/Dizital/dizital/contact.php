@@ -1,8 +1,7 @@
-<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>Dizital HTML Template | Contact</title>
+<title>Contact</title>
 <!-- Stylesheets -->
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
@@ -15,16 +14,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
 
 <body>
 
 <div class="page-wrapper">
- 	
-    <!-- Preloader -->
-    <div class="preloader"></div>
  	
     <!-- Main Header-->
     <header class="main-header">
@@ -35,7 +29,7 @@
             	<div class="clearfix">
                 	
                 	<div class="pull-left logo-box">
-                    	<div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+                    	<div class="logo"><a href="index.php"><img src="images/logo.png" alt="" title=""></a></div>
                     </div>
                     
                     <div class="nav-outer pull-right clearfix">
@@ -52,10 +46,10 @@
 
 							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 								<ul class="navigation clearfix">
-									<li><a href="index.html">Home</a>
+									<li><a href="index.php">Home</a>
 									</li>
-									<li><a href="about.html">About Us</a></li>
-									<li><a href="contact.html">Contact us</a></li>
+									<li><a href="about.php">About Us</a></li>
+									<li><a href="contact.php">Contact us</a></li>
 								</ul>
 							</div>
 							
@@ -77,7 +71,7 @@
         	<div class="auto-container clearfix">
             	<!--Logo-->
             	<div class="logo pull-left">
-                	<a href="index.html" class="img-responsive"><img src="images/logo-small.png" alt="" title=""></a>
+                	<a href="index.php" class="img-responsive"><img src="images/logo-small.png" alt="" title=""></a>
                 </div>
                 
                 <!--Right Col-->
@@ -92,10 +86,10 @@
                         
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
                             <ul class="navigation clearfix">
-                                <li><a href="index.html">Home</a>
+                                <li><a href="index.php">Home</a>
 								</li>
-								<li><a href="about.html">About Us</a></li>
-								<li><a href="contact.html">Contact us</a></li>
+								<li><a href="about.php">About Us</a></li>
+								<li><a href="contact.php">Contact us</a></li>
                             </ul>
                         </div>
                     </nav><!-- Main Menu End-->
@@ -205,7 +199,7 @@
                             <div class="footer-column col-lg-7 col-md-7 col-sm-12">
 								<div class="footer-widget logo-widget">
 									<div class="logo">
-										<a href="index.html"><img src="images/footer-logo.png" alt="" /></a>
+										<a href="index.php"><img src="images/footer-logo.png" alt="" /></a>
 									</div>
 									<div class="text">Lorem Ipsum proin gravida nibh vel velit aucsollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</div>
 									<ul class="social-icon-one">

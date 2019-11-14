@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -21,8 +20,6 @@
 
 <div class="page-wrapper">
  	
-
- 	
     <!-- Main Header-->
     <header class="main-header">
     
@@ -32,7 +29,7 @@
             	<div class="clearfix">
                 	
                 	<div class="pull-left logo-box">
-                    	<div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+                    	<div class="logo"><a href="index.php"><img src="images/logo.png" alt="" title=""></a></div>
                     </div>
                     
                     <div class="nav-outer pull-right clearfix">
@@ -49,10 +46,10 @@
 
 							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 								<ul class="navigation clearfix">
-									<li><a href="index.html">Home</a>
+									<li><a href="index.php">Home</a>
 									</li>
-									<li><a href="about.html">About Us</a></li>
-									<li><a href="contact.html">Contact us</a></li>
+									<li><a href="about.php">About Us</a></li>
+									<li><a href="contact.php">Contact us</a></li>
 								</ul>
 							</div>
 							
@@ -74,7 +71,7 @@
         	<div class="auto-container clearfix">
             	<!--Logo-->
             	<div class="logo pull-left">
-                	<a href="index.html" class="img-responsive"><img src="images/logo-small.png" alt="" title=""></a>
+                	<a href="index.php" class="img-responsive"><img src="images/logo-small.png" alt="" title=""></a>
                 </div>
                 
                 <!--Right Col-->
@@ -89,10 +86,10 @@
                         
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
                             <ul class="navigation clearfix">
-                                <li><a href="index.html">Home</a>
+                                <li><a href="index.php">Home</a>
 								</li>
-								<li><a href="about.html">About Us</a></li>
-								<li><a href="contact.html">Contact us</a></li>
+								<li><a href="about.php">About Us</a></li>
+								<li><a href="contact.php">Contact us</a></li>
                             </ul>
                         </div>
                     </nav><!-- Main Menu End-->
@@ -111,7 +108,7 @@
 			<h2>We are speak just truth<br>Global news</h2>
 			<!--Search Form-->
 			<div class="search-form">
-				<form method="post" action="blog.html">
+				<form method="post" action="index.php">
 					<div class="form-group clearfix">
 						<select class="custom-select-box">
 							<option>All</option>
@@ -151,16 +148,11 @@
 					<div class="gallery-block mix col-lg-4 col-md-6 col-sm-12">
 						<div class="inner-box">
 							<figure class="image-box">
-								<img src="images/gallery/1.jpg" alt="">
+								<a href="blog-single.php"><img src="images/gallery/1.jpg" alt=""></a>
 								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
 										<div class="content">
-											<a href="shop-single.html" class="link"><span class="icon fa fa-link"></span></a>
-											<a href="images/gallery/1.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
+											<a href="blog-single.php">More</a>
 										</div>
-									</div>
-								</div>
 							</figure>
 						</div>
 					</div>
@@ -169,13 +161,12 @@
 					<div class="gallery-block mix nature food col-lg-4 col-md-6 col-sm-12">
 						<div class="inner-box">
 							<figure class="image-box">
-								<img src="images/gallery/2.jpg" alt="">
+								<a href="blog-single.php"><img src="images/gallery/2.jpg" alt=""></a>
 								<!--Overlay Box-->
 								<div class="overlay-box">
 									<div class="overlay-inner">
 										<div class="content">
-											<a href="shop-single.html" class="link"><span class="icon fa fa-link"></span></a>
-											<a href="images/gallery/2.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
+											<a href="blog-single.php">More</a>
 										</div>
 									</div>
 								</div>
@@ -192,7 +183,6 @@
 								<div class="overlay-box">
 									<div class="overlay-inner">
 										<div class="content">
-											<a href="shop-single.html" class="link"><span class="icon fa fa-link"></span></a>
 											<a href="images/gallery/3.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
 										</div>
 									</div>
@@ -210,7 +200,6 @@
 								<div class="overlay-box">
 									<div class="overlay-inner">
 										<div class="content">
-											<a href="shop-single.html" class="link"><span class="icon fa fa-link"></span></a>
 											<a href="images/gallery/4.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
 										</div>
 									</div>
@@ -228,7 +217,6 @@
 								<div class="overlay-box">
 									<div class="overlay-inner">
 										<div class="content">
-											<a href="shop-single.html" class="link"><span class="icon fa fa-link"></span></a>
 											<a href="images/gallery/5.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
 										</div>
 									</div>
@@ -246,7 +234,6 @@
 								<div class="overlay-box">
 									<div class="overlay-inner">
 										<div class="content">
-											<a href="shop-single.html" class="link"><span class="icon fa fa-link"></span></a>
 											<a href="images/gallery/6.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
 										</div>
 									</div>
@@ -264,7 +251,6 @@
 								<div class="overlay-box">
 									<div class="overlay-inner">
 										<div class="content">
-											<a href="shop-single.html" class="link"><span class="icon fa fa-link"></span></a>
 											<a href="images/gallery/7.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
 										</div>
 									</div>
@@ -282,7 +268,6 @@
 								<div class="overlay-box">
 									<div class="overlay-inner">
 										<div class="content">
-											<a href="shop-single.html" class="link"><span class="icon fa fa-link"></span></a>
 											<a href="images/gallery/8.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
 										</div>
 									</div>
@@ -300,7 +285,6 @@
 								<div class="overlay-box">
 									<div class="overlay-inner">
 										<div class="content">
-											<a href="shop-single.html" class="link"><span class="icon fa fa-link"></span></a>
 											<a href="images/gallery/9.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
 										</div>
 									</div>
@@ -308,64 +292,7 @@
 							</figure>
 						</div>
 					</div>
-					
-					<!--Gallery Block-->
-					<div class="gallery-block mix people col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/10.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="shop-single.html" class="link"><span class="icon fa fa-link"></span></a>
-											<a href="images/gallery/10.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-					
-					<!--Gallery Block-->
-					<div class="gallery-block mix people col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/11.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="shop-single.html" class="link"><span class="icon fa fa-link"></span></a>
-											<a href="images/gallery/11.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-					
-					<!--Gallery Block-->
-					<div class="gallery-block mix col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/12.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="shop-single.html" class="link"><span class="icon fa fa-link"></span></a>
-											<a href="images/gallery/12.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-					
-				</div>
-				
-				
+
 				<div class="btn-box text-center">
 					<a href="#" class="theme-btn btn-style-two">Load more</a>
 				</div>
@@ -375,64 +302,12 @@
 	</section>
 	<!--End Gallery Section-->
 	
-	<!--News Section-->
-	<section class="news-section">
-		<div class="auto-container">
-			<div class="row clearfix">
-					
-				<!--News Block-->
-				<div class="news-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="post-date">16.09.2018</div>
-						<h3><a href="blog-single.html">UPDATE!
-						We create websites that have it all: Beauty and Brains.</a></h3>
-						<div class="text">Lorem Ipsum proin gravida nibh vel velit aucsollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.  Morbi accumsan ipsum velit.</div>
-						<div class="author">
-							<div class="author-image"><img src="images/resource/author-2.jpg" alt="" /></div>
-							by Adminisrator
-						</div>
-					</div>
-				</div>
-				
-				<!--News Block-->
-				<div class="news-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="post-date">08.10.2018</div>
-						<h3><a href="blog-single.html">UPDATE!
-						Good design is obvious. Great design is transparent.</a></h3>
-						<div class="text">Lorem Ipsum proin gravida nibh vel velit aucsollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.  Morbi accumsan ipsum velit.</div>
-						<div class="author">
-							<div class="author-image"><img src="images/resource/author-2.jpg" alt="" /></div>
-							by Adminisrator
-						</div>
-					</div>
-				</div>
-				
-				<!--News Block-->
-				<div class="news-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="post-date">12.12.2019</div>
-						<h3><a href="blog-single.html">UPDATE!
-						This is how I feel when I am not making the internet.</a></h3>
-						<div class="text">Lorem Ipsum proin gravida nibh vel velit aucsollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.  Morbi accumsan ipsum velit.</div>
-						<div class="author">
-							<div class="author-image"><img src="images/resource/author-2.jpg" alt="" /></div>
-							by Adminisrator
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!--End News Section-->
-	
 	<!--Counter Section-->
 	<section class="counter-section">
 		<!--Title Box-->
 		<div class="title-box" style="background-image: url(images/background/1.jpg)">
 			<div class="auto-container">
-				<h2>Send your news to<br>dizitalnes@gmail.com</h2>
+				<h2>Send your news to<br>dizitalnews@gmail.com</h2>
 			</div>
 		</div>
 	</section>
@@ -455,7 +330,7 @@
                             <div class="footer-column col-lg-7 col-md-7 col-sm-12">
 								<div class="footer-widget logo-widget">
 									<div class="logo">
-										<a href="index.html"><img src="images/footer-logo.png" alt="" /></a>
+										<a href="index.php"><img src="images/footer-logo.png" alt="" /></a>
 									</div>
 									<div class="text">Lorem Ipsum proin gravida nibh vel velit aucsollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</div>
 									<ul class="social-icon-one">
@@ -528,6 +403,7 @@
 
 <script src="js/jquery.js"></script>
 <script src="js/popper.min.js"></script>
+<script src="js/mixitup.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="js/jquery.fancybox.js"></script>
@@ -536,6 +412,7 @@
 <script src="js/wow.js"></script>
 <script src="js/jquery-ui.js"></script>
 <script src="js/script.js"></script>
+
 
 </body>
 </html>
