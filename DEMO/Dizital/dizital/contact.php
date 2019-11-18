@@ -132,12 +132,6 @@
 									<div class="form-group col-lg-6 col-md-6 col-sm-12">
 										<input type="email" name="email" value="" placeholder="Email" required>
 									</div>
-									<div class="form-group col-lg-6 col-md-6 col-sm-12">
-										<input type="text" name="phone" value="" placeholder="Phone" required>
-									</div>
-									<div class="form-group col-lg-6 col-md-6 col-sm-12">
-										<input type="text" name="subject" value="" placeholder="Subject" required>
-									</div>
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
 										<textarea name="message" placeholder="Comment..."></textarea>
 									</div>

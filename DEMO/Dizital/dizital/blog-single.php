@@ -18,10 +18,7 @@
 
 <body>
 
-<div class="page-wrapper">
- 	
-    <!-- Preloader -->
-    <div class="preloader"></div>
+<div class="page-wrapper">	
  	
     <!-- Main Header / Header Style Two-->
     <header class="main-header header-style-two">
@@ -199,9 +196,6 @@
 								</div>
 								<div class="col-lg-4 col-md-6 col-sm-12 form-group">
 									<input type="email" name="email" placeholder="Email" required>
-								</div>
-								<div class="col-lg-4 col-md-12 col-sm-12 form-group">
-									<input type="text" name="website" placeholder="Website" required>
 								</div>
 								<div class="col-lg-12 col-md-12 col-sm-12 form-group">
 									<button class="theme-btn btn-style-two" type="submit" name="submit-form">Submit</button>
