@@ -79,8 +79,10 @@ body {
 
 a{
 	text-decoration:none;
+	font-family: 'Odibee Sans', cursive;
 	cursor:pointer;
-	color:#3f9b77;
+	color:white;
+	font-size: 50px;
 }
 
 button,
@@ -1888,7 +1890,6 @@ img{
 .gallery-section .btn-box{
 	margin-top: 10px;
 }
-
 /*** 
 
 ====================================================================

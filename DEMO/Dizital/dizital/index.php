@@ -9,6 +9,7 @@
 
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -148,11 +149,15 @@
 					<div class="gallery-block mix col-lg-4 col-md-6 col-sm-12">
 						<div class="inner-box">
 							<figure class="image-box">
-								<a href="blog-single.php"><img src="images/gallery/1.jpg" alt=""></a>
+								<a href="blog-single.php"><img src="images/gallery/1.jpg" alt="#"></a>
 								<!--Overlay Box-->
+								<div class="overlay-box">
+									<div class="overlay-inner">
 										<div class="content">
 											<a href="blog-single.php">More</a>
 										</div>
+									</div>
+								</div>
 							</figure>
 						</div>
 					</div>
@@ -161,7 +166,7 @@
 					<div class="gallery-block mix nature food col-lg-4 col-md-6 col-sm-12">
 						<div class="inner-box">
 							<figure class="image-box">
-								<a href="blog-single.php"><img src="images/gallery/2.jpg" alt=""></a>
+								<a href="blog-single.php"><img src="images/gallery/2.jpg" alt="#"></a>
 								<!--Overlay Box-->
 								<div class="overlay-box">
 									<div class="overlay-inner">
@@ -183,7 +188,7 @@
 								<div class="overlay-box">
 									<div class="overlay-inner">
 										<div class="content">
-											<a href="images/gallery/3.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
+											<a href="blog-single.php">More</a>
 										</div>
 									</div>
 								</div>
@@ -200,7 +205,7 @@
 								<div class="overlay-box">
 									<div class="overlay-inner">
 										<div class="content">
-											<a href="images/gallery/4.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
+											<a href="blog-single.php">More</a>
 										</div>
 									</div>
 								</div>
@@ -217,7 +222,7 @@
 								<div class="overlay-box">
 									<div class="overlay-inner">
 										<div class="content">
-											<a href="images/gallery/5.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
+											<a href="blog-single.php">More</a>
 										</div>
 									</div>
 								</div>
@@ -234,7 +239,7 @@
 								<div class="overlay-box">
 									<div class="overlay-inner">
 										<div class="content">
-											<a href="images/gallery/6.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
+											<a href="blog-single.php">More</a>
 										</div>
 									</div>
 								</div>
@@ -251,7 +256,7 @@
 								<div class="overlay-box">
 									<div class="overlay-inner">
 										<div class="content">
-											<a href="images/gallery/7.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
+											<a href="blog-single.php">More</a>
 										</div>
 									</div>
 								</div>
@@ -268,7 +273,7 @@
 								<div class="overlay-box">
 									<div class="overlay-inner">
 										<div class="content">
-											<a href="images/gallery/8.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
+											<a href="blog-single.php">More</a>
 										</div>
 									</div>
 								</div>
@@ -285,18 +290,13 @@
 								<div class="overlay-box">
 									<div class="overlay-inner">
 										<div class="content">
-											<a href="images/gallery/9.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon fa fa-search"></span></a>
+											<a href="blog-single.php">More</a>
 										</div>
 									</div>
 								</div>
 							</figure>
 						</div>
 					</div>
-
-				<div class="btn-box text-center">
-					<a href="#" class="theme-btn btn-style-two">Load more</a>
-				</div>
-				
 			</div>
 		</div>
 	</section>
