@@ -79,12 +79,12 @@ body {
 
 a{
 	text-decoration:none;
-	font-family: 'Odibee Sans', cursive;
+	font-family: 'Righteous', cursive;
 	cursor:pointer;
 	color:white;
 	font-size: 50px;
 }
-
+s
 button,
 a:hover,a:focus,a:visited{
 	text-decoration:none;
