@@ -19,7 +19,7 @@
 
 <body>
 <?php
-require_once 'connection.php'; // подключаем скрипт
+require_once 'core/connection.php'; // подключаем скрипт
  
 // подключаемся к серверу
 $link = mysqli_connect($host, $user,$password, $database) 
@@ -113,7 +113,15 @@ mysqli_close($link);
     
     </header>
     <!--End Main Header -->
-	
+    <?php
+		/*if(isset($_GET['id'])){
+	        $id = $_GET['id'];
+	        $object_news = new News($connect,$id);
+	    }else{
+	        $id = 'All';
+	        $object_news = new News($connect,$id);
+	    }*/
+	?>
 	<!--Banner Section-->
 	<section class="banner-section" style="background-image: url(images/background/town.jpeg)">
 		<div class="auto-container">

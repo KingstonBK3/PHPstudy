@@ -1,0 +1,215 @@
+[33mcommit 07e77658525e3580f934093391741e6758e98eca[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Mon Nov 25 11:23:34 2019 +0200
+
+    подключил бд и прописал классы категорий,новостей,комментов,контактов т тд.
+
+[33mcommit bb99696649d5055ff283a0a169426eb07c311ebc[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Tue Nov 19 11:07:59 2019 +0200
+
+    шрифт поменал у More
+
+[33mcommit 0c9d64dc3424a76807e6d972d99360806f4c028f[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Mon Nov 18 13:34:37 2019 +0200
+
+    file update
+
+[33mcommit f6a15fb1fa15b10889de1b10fc19b14c9690b762[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Mon Nov 18 13:07:50 2019 +0200
+
+    Шаблон сделан и доделана бд
+
+[33mcommit 463fa01115a833022de0ab85e327e3749fe24df3[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Mon Nov 18 11:08:43 2019 +0200
+
+    files z disc
+
+[33mcommit 32561919cf3e9d275844865eb1d9fdaf9d532f99[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Mon Nov 18 08:58:46 2019 +0200
+
+    18.11.19 style.css/index.php
+
+[33mcommit 62ea95e9045aadadc0031ce75d93ddd95aed53ac[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Thu Nov 14 11:24:02 2019 +0200
+
+    Доделать блоки новостей и сделать еорм ссылки и заполнить бд
+
+[33mcommit 682759700ef54f4afb9cf136520e895dd789f40b[m
+Author: Your Name <you@example.com>
+Date:   Wed Nov 13 15:51:10 2019 +0200
+
+    Переделал бд и вроде как поправил главную страницу
+
+[33mcommit a44daf81d31b942796a88410b4ee611621fce5fb[m
+Author: Your Name <you@example.com>
+Date:   Tue Nov 12 15:37:08 2019 +0200
+
+    pages is done,i should to create database and connect.
+
+[33mcommit 8b9ccd67c0f9a09d764c9093df49caacd471e1b7[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Mon Nov 11 13:32:28 2019 +0200
+
+    Шаблон сделал index.Нужно доделать остальные сь
+
+[33mcommit df52851dd9eacc20e98df836cd057cab1c99358b[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Mon Nov 11 11:02:46 2019 +0200
+
+    скачал шаблон и сделал дамп дб
+
+[33mcommit 09eae93b998e3986028c9a321adeb49ffcf6a670[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Tue Oct 29 11:13:50 2019 +0200
+
+    class
+
+[33mcommit 28dccfeda37fbd66568f3dfbdf22be363ee60cb4[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Tue Oct 22 11:23:11 2019 +0300
+
+    KR3 and KR2 is 50%
+
+[33mcommit 821d568fbd6057e53cdc3aba2f3350984dc6cc69[m
+Author: Your Name <you@example.com>
+Date:   Mon Oct 21 16:43:20 2019 +0300
+
+    KR2 = done! and KR3 zad1 = done!
+
+[33mcommit 770622acfcbc28dd8659658b19f0024c1c88aedb[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Thu Oct 17 11:10:34 2019 +0300
+
+    KR3 file
+
+[33mcommit 99013a7716cbf577772e03e59e27fae6a0c66366[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Thu Oct 17 11:07:33 2019 +0300
+
+    1 zadanie done and 2-3 50%
+
+[33mcommit 02bfa5165ae45e99d47a4589cfba69c314f1d6e8[m
+Author: Your Name <you@example.com>
+Date:   Wed Oct 16 19:53:38 2019 +0300
+
+    KR2 И ЗАДАНИЕ НА ПОГОДУ
+
+[33mcommit 66eaa0ba4f6867273d3ffff5dd069f922c096f45[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Tue Oct 15 15:06:01 2019 +0300
+
+    faily zadanii i kr
+
+[33mcommit 4a835684cb31de086d551b09756303cfce677ef7[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Tue Oct 15 14:58:51 2019 +0300
+
+    2 и 3 ы процессе
+
+[33mcommit 69a9f01b2a3b933bc40886d57733df4f791f7514[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Tue Oct 15 14:28:50 2019 +0300
+
+    15.10.2019
+
+[33mcommit 757768c56a5f04efb93f5bf47c4391ae2072bca0[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Mon Oct 14 11:08:02 2019 +0300
+
+    14.10.2019 1zadanije
+
+[33mcommit 4349d14466eed938a57d75b864dc021197985f84[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Tue Oct 8 11:19:40 2019 +0300
+
+    Анкета
+
+[33mcommit ebdd8a37ee6209297e62ad25ab5b7ed9d8137b63[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Thu Oct 3 10:45:59 2019 +0300
+
+    Задание на континенты
+
+[33mcommit 6d5850b2cfd1d3267bad223308c99159a7e19ac2[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Thu Oct 3 10:45:49 2019 +0300
+
+    Задание на континенты
+
+[33mcommit 93b119a3602a180728c9ea1e0167b9a2dba63c14[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Mon Sep 30 11:09:13 2019 +0300
+
+    Задание 5.Студенты и средний балл
+
+[33mcommit dd3182544287474a168f4b653dc3daafe8120fa6[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Mon Sep 30 11:08:21 2019 +0300
+
+    Задание 5.Студенты и средний балл
+
+[33mcommit 35751bbde04a52db9133aa3a81d3d220d7dfef28[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Mon Sep 30 09:58:23 2019 +0300
+
+    Двумерные массивы.Пример
+
+[33mcommit cc4a4b7b5c9278e6e24e9dd0ece304365e8a5972[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Fri Sep 27 09:44:42 2019 +0300
+
+    27.09.2019
+
+[33mcommit 0b45c7132523e0691e784dbb5a26897d25ab31f9[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Fri Sep 20 09:36:51 2019 +0300
+
+    9.20.19 задание на блюда и массивы
+
+[33mcommit ce55dde36a2a2e15e906eebc99a15f4e5aec8e2f[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Thu Sep 19 11:24:45 2019 +0300
+
+    func
+
+[33mcommit 3062a9deeec1eae926806dda119d2ae47d35e58a[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Thu Sep 19 10:37:04 2019 +0300
+
+    Не доделаны функции //evennumbermass();maxmass();minmass();avrminmax()
+
+[33mcommit 5ee10e0ad7e2ca9d521fe0058a5f6490850e040a[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Thu Sep 19 10:28:05 2019 +0300
+
+    Задание с массивами, не сделал задание с четным числом и с нахождением максимального и минимального
+
+[33mcommit 6a385a375607487896df79d37adf81dfc94ad1f6[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Tue Sep 17 11:19:59 2019 +0300
+
+    Контрольная работа(доделать)
+
+[33mcommit f3d9319d48579e3e5524b7d06aeb155d9d2dc3ae[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Mon Sep 16 10:34:28 2019 +0300
+
+    Решил задачу Дескриминанта
+
+[33mcommit d34edab654acb3f51e5ba74a5732173c3e1c8465[m
+Author: pupil <pupil@ivkhk.ee>
+Date:   Thu Sep 12 11:18:00 2019 +0300
+
+    3 задание в процессе
+
+[33mcommit 57a34428074bb11f964a2add48629b52f5a1b377[m
+Author: Your Name <you@example.com>
+Date:   Thu Sep 5 17:35:52 2019 +0300
+
+    пересоздал репозиторий для более понятной сортировки
