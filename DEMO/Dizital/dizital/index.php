@@ -135,7 +135,7 @@
                 <div class="filters text-center clearfix">
                     <ul class="filter-tabs filter-btns clearfix">
                     	<?php 
-                        	$categories = get_category($link); 
+                        	$categories = get_category(); 
                         ?>
                         	<?php if (count($categories)===0): ?>
                         <li><a href="#">Добавить категорию</a></li>
@@ -148,161 +148,42 @@
                     	<?php endif; ?>
                     </ul>
                 </div>
-                
+                <?php
+                	$news = get_news();
+                ?>
+                <?php foreach ($news as $news): ?>
                 <div class="filter-list row clearfix">
-					
-					<!--Gallery Block-->
-					<div class="gallery-block mix col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<figure class="image-box">
-								<a href="blog-single.php"><img src="images/gallery/1.jpg" alt="#"></a>
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="blog-single.php">More</a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-					
-					<!--Gallery Block-->
-					<div class="gallery-block mix nature food col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<figure class="image-box">
-								<a href="blog-single.php"><img src="images/gallery/2.jpg" alt="#"></a>
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="blog-single.php">More</a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-					
-					<!--Gallery Block-->
-					<div class="gallery-block mix animals people col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/3.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="blog-single.php">More</a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-					
-					<!--Gallery Block-->
-					<div class="gallery-block mix nature animals col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/4.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="blog-single.php">More</a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-					
-					<!--Gallery Block-->
-					<div class="gallery-block mix animals food col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/5.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="blog-single.php">More</a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-					
-					<!--Gallery Block-->
-					<div class="gallery-block mix nature people col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/6.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="blog-single.php">More</a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-					
-					<!--Gallery Block-->
-					<div class="gallery-block mix animals people col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/7.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="blog-single.php">More</a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-					
-					<!--Gallery Block-->
-					<div class="gallery-block mix nature food col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/8.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="blog-single.php">More</a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-					
-					<!--Gallery Block-->
-					<div class="gallery-block mix animals col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/9.jpg" alt="">
-								<!--Overlay Box-->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="blog-single.php">More</a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
+                <div class="row">
+				  <div class="span8">
+				    <div class="row">
+				      <div class="span8">
+				        <h3><strong><?=$news['text']?></strong></h3>
+				      </div>
+				    </div>
+				    <div class="row">
+				      <div class="span2">
+				            <img src="<?=$news['img']?>" alt="">
+				      </div>
+				      <div class="span6">      
+				        <p>
+				          <?=$news['discription']?>
+				        </p>
+				        <p>Read more</p>
+				      </div>
+				    </div>
+				    <div class="row">
+				      <div class="span8">
+				        <p></p>
+				        <p>
+				          <i class="icon-user"></i><?=$news['users']?> 
+				          | <i class="icon-calendar"></i><?=$news['date']?> 
+				        </p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<hr>
+				<?php endforeach; ?>			
 			</div>
 		</div>
 	</section>

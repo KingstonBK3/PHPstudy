@@ -1,22 +1,8 @@
 <?php
-/*class Category
-{
-    public $arr_category;
-    public function __construct($connect)
-    {
-        $query = mysqli_query($connect, "SELECT * FROM category");
-        $arr = [];
-        while ($result = mysqli_fetch_assoc($query)){
-            $arr[] = $result;
-        }
-        $this->arr_category = $arr;
-    }
-    public function getArrCategory(){
-        return $this->arr_category;
-    }
-}*/
-function get_category($link)
-{
+function get_category()
+{   
+    global $link;
+
     $sql = "SELECT * FROM category";
 
     $result = mysqli_query($link,$sql);
@@ -25,4 +11,14 @@ function get_category($link)
 
     return $categories;
 }
-$categories = get_category($link);
+function get_news()
+{
+    global $link;
+    $sql="SELECT * FROM news";
+
+    $result = mysqli_query($link,$sql);
+
+    $news= mysqli_fetch_all($result, 1);
+
+    return $news;
+}
