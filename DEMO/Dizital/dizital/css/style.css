@@ -1069,7 +1069,7 @@ img{
 	position:relative;
 	margin-bottom:20px;
 	z-index: 1;
-	padding-left: 150px;
+	padding-left: 27px;
 }
 
 .search-form .form-group .custom-select-box{
@@ -1769,6 +1769,7 @@ img{
 
 .gallery-section .filters .filter-tabs .filter{
 	position:relative;
+	font-family: 'Raleway', sans-serif;
 	color:#1e2230;
 	font-size:14px;
 	cursor:pointer;

@@ -1,3 +1,9 @@
+<?php 
+	require_once 'core\connection.php';
+	require_once 'functions\category.php';
+?>
+<pre>
+</pre>
 <html>
 <head>
 <meta charset="utf-8">
@@ -10,26 +16,14 @@
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
 </head>
-
 <body>
-<?php
-require_once 'core/connection.php'; // подключаем скрипт
- 
-// подключаемся к серверу
-$link = mysqli_connect($host, $user,$password, $database) 
-    or die("Ошибка " . mysqli_error($link));
- 
-// выполняем операции с базой данных
-     
-// закрываем подключение
-mysqli_close($link);
-?>
 <div class="page-wrapper">
  	
     <!-- Main Header-->
@@ -113,15 +107,6 @@ mysqli_close($link);
     
     </header>
     <!--End Main Header -->
-    <?php
-		/*if(isset($_GET['id'])){
-	        $id = $_GET['id'];
-	        $object_news = new News($connect,$id);
-	    }else{
-	        $id = 'All';
-	        $object_news = new News($connect,$id);
-	    }*/
-	?>
 	<!--Banner Section-->
 	<section class="banner-section" style="background-image: url(images/background/town.jpeg)">
 		<div class="auto-container">
@@ -130,12 +115,6 @@ mysqli_close($link);
 			<div class="search-form">
 				<form method="post" action="index.php">
 					<div class="form-group clearfix">
-						<select class="custom-select-box">
-							<option>All</option>
-							<option>Sport</option>	
-							<option>Policy</option>
-							<option>Other</option>
-						</select>
 						<input type="text" name="firstname" value="" placeholder="Searh here...." required>
 						<button type="submit" class="theme-btn dripicons-search"></button>
 					</div>
@@ -155,10 +134,18 @@ mysqli_close($link);
                 <!--Filter-->
                 <div class="filters text-center clearfix">
                     <ul class="filter-tabs filter-btns clearfix">
-                        <li class="active filter" data-role="button" data-filter="all">All</li>
-                        <li class="filter" data-role="button" data-filter=".Policy">Policy</li>
-                        <li class="filter" data-role="button" data-filter=".Sport">Sport</li>
-                        <li class="filter" data-role="button" data-filter=".Other">Other</li>
+                    	<?php 
+                        	$categories = get_category($link); 
+                        ?>
+                        	<?php if (count($categories)===0): ?>
+                        <li><a href="#">Добавить категорию</a></li>
+                        <?php else: ?>
+
+                        <?php foreach ($categories as $category):?>
+                    	<li class="filter" data-role="button"><a class="filter" href='/category.php?id=<?=$category['id']?>'><?=$category['name']?></a></li>
+                    	<?php endforeach; ?>
+                    	
+                    	<?php endif; ?>
                     </ul>
                 </div>
                 
