@@ -1,9 +1,9 @@
 <?php
 class Category
 {
-    public static function getCategory(){
+    public static function getAllCategory(){
         $query = "SELECT * FROM category";
-        $db = new Connection_DB();
+        $db = new Database();
         $arr = $db->getAll($query);
         return $arr;
     }

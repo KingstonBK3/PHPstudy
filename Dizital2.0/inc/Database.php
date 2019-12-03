@@ -1,5 +1,5 @@
 <?php
-class Connection_DB
+class Database
 {
     private $conn;
     private $host;
@@ -10,8 +10,8 @@ class Connection_DB
     {
         $this->host = 'localhost';
         $this->user = 'root';
-        $this->pass = '';
-        $this->NameDB = 'dizital';
+        $this->pass = '123';
+        $this->NameDB = 'dizital_news';
         $this->connect();
     }
     public function __destruct(){
@@ -38,22 +38,24 @@ class Connection_DB
         $stmt = $this->conn->prepare($query);
         $stmt = execute();
         $stmt = setFetchMode(PDO::FETCH_ASSOC);
-        $response = $stmt->fetch();
+        $response = $stmt->fetch();       
         return $response;
+
     }
     public function executeRun($query){
         $response = $this->conn->exec($query);
         return $response;
     }
-    public function getLastId(){
-        $lastId = $this->conn->lastInsertId();
-        return $lastId;
-    }
+
     public function getAll($query){
         $stmt = $this->conn->prepare($query);
         $stmt = execute();
         $stmt = setFetchMode(PDO::FETCH_ASSOC);
         $response = $stmt->fetchAll();
         return $response;
+    }
+    public function getLastId(){
+        $GetlastId = $this->conn->lastInsertId();
+        return $GetlastId;
     }
 }
