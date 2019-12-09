@@ -1,3 +1,4 @@
+
 <?php
 class Database
 {
@@ -36,8 +37,8 @@ class Database
     }
     public function getOne($query){
         $stmt = $this->conn->prepare($query);
-        $stmt = execute();
-        $stmt = setFetchMode(PDO::FETCH_ASSOC);
+        $stmt -> execute();
+        $stmt -> setFetchMode(PDO::FETCH_ASSOC);
         $response = $stmt->fetch();       
         return $response;
 
@@ -49,8 +50,8 @@ class Database
 
     public function getAll($query){
         $stmt = $this->conn->prepare($query);
-        $stmt = execute();
-        $stmt = setFetchMode(PDO::FETCH_ASSOC);
+        $stmt -> execute();
+        $stmt -> setFetchMode(PDO::FETCH_ASSOC);
         $response = $stmt->fetchAll();
         return $response;
     }

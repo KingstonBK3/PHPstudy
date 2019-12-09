@@ -4,6 +4,16 @@ $num = substr_count($host, '/');
 $path = explode('/', $host) [$num];
 if($path == '' OR $path == 'index' OR $path = 'index.php'){
     $response = Controller::StartSite();
-}else{
-    $response = Controller::error404();
+}
+elseif($path =='all'){
+    $response = Controller::AllNews();
+}
+elseif ($path == 'category' and isset($_GET['id'])) {
+	$response = Controller::NewsByCAtID($_GET['id']);
+}
+elseif ($path == 'news' and isset($_GET['id'])) {
+	$response = Controller::NewsByID($_GET['id']);
+}
+else{
+	$response = Controller::error404();
 }

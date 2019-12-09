@@ -2,21 +2,23 @@
 class ViewNews{
 	public static function NewsByCategory($arr){
 		foreach ($arr as $value) {
-			echo "";
-			echo "";
-			echo "";
+			echo '<img src="data:images/'.
+			($value['img']).'"width=150 /><br>';
+			echo "<h2>".$value['title']."</h2>";
+			echo "<a href='news?id=".$value['id']."'></a><br>";
 		}
 	}
 	public static function AllNews($arr){
 		foreach ($arr as $value) {
-			echo "";
-			echo "";
+			echo "<li>".$value['title'];
+			echo "<a href='news?id=".$value['id']."'></a></li><br>";
 		}
 	}
 	public static function ReadNews($n){
-		echo "";
-		echo "";
-		echo "";
+		echo "<h2>".$n['title']."<h2>";
+		//
+		echo '<br><img src ="data:images/'.$n['img'].'" width=150/><nr>';
+		echo "<p>".$n['text']."</p>";
 	}
 }
 ?>

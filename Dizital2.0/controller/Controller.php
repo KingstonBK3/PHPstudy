@@ -2,13 +2,14 @@
 class Controller
 {
     public static function StartSite(){
-        $array=Category::getCategory();
+        $array=Category::getAllCategory();//писок всех категорий    
         include_once 'view/start.php';
     }
     public static function AllCategory(){
-        $arr = Category::getCategory();
-        include_once 'view/start.php';
+        $arr = Category::getAllCategory();
+        include_once 'view/category.php';
     }
+
     public static function AllNews(){
         $arr = News::getAllNews();
         include_once 'view/allnews.php';

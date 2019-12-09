@@ -19,9 +19,9 @@ class News{
 		return $arr;
 	}
 	public static function getNewsByID(){
-		$query = "SELECT * FROM news WHERE category_id=".(string)$id;
+		$query = "SELECT * FROM news WHERE id=".(string)$id;
 		$db = new Database();
-		$arr = $db->getAll($query);
-		return $arr;
+		$arr = $db->getOne($query);
+		return $n;
 	}
 }
