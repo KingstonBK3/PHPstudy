@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Homepage</title>
+<title>Blog Single</title>
 <!-- Stylesheets -->
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="style.css" rel="stylesheet">
@@ -9,19 +9,19 @@
 
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
-<link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
 </head>
+
 <body>
-<div class="page-wrapper">
+
+<div class="page-wrapper">	
  	
-    <!-- Main Header-->
-    <header class="main-header">
+    <!-- Main Header / Header Style Two-->
+    <header class="main-header header-style-two">
     
     	<!--Header-Upper-->
         <div class="header-upper">
@@ -29,7 +29,7 @@
             	<div class="clearfix">
                 	
                 	<div class="pull-left logo-box">
-                    	<div class="logo"><a href="index.php"><img src="images/logo.png" alt="" title=""></a></div>
+                    	<div class="logo"><a href="index.php"><img src="images/logo-2.png" alt="" title=""></a></div>
                     </div>
                     
                     <div class="nav-outer pull-right clearfix">
@@ -46,7 +46,7 @@
 
 							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 								<ul class="navigation clearfix">
-									<li><a href="index.php">Home</a>
+									<li class="dropdown"><a href="index.php">Home</a>
 									</li>
 									<li><a href="about.php">About Us</a></li>
 									<li><a href="contact.php">Contact us</a></li>
@@ -56,8 +56,6 @@
 						</nav>
 						
 						<!-- Main Menu End-->
-						
-						<!--Button Box-->
 						
 					</div>
                     
@@ -101,64 +99,67 @@
     
     </header>
     <!--End Main Header -->
-	<!--Banner Section-->
-	<section class="banner-section" style="background-image: url(images/background/town.jpeg)">
-		<div class="auto-container">
-			<h2>We are speak just truth<br>Global news</h2>
-			<!--Search Form-->
-			<div class="search-form">
-				<form method="post" action="index.php">
-					<div class="form-group clearfix">
-						<input type="text" name="firstname" value="" placeholder="Searh here...." required>
-						<button type="submit" class="theme-btn dripicons-search"></button>
-					</div>
 
-				</form>
-			</div>
-			<!--End Search Form-->
-	</section>
-	<!--End Banner Section-->
-	
-	<section class="gallery-section">
+	<!--Sidebar Page Container-->
+    <div class="sidebar-page-container">
     	<div class="auto-container">
-        	
-        	<!--MixitUp Galery-->
-            <div class="mixitup-gallery">
-                
-                <!--Filter-->
-                <div class="filters text-center clearfix">
-                	<ul class='filter-tabs filter-btns clearfix'>
-                    <?php 
-                        Controller::AllCategory();
-                    ?>
-                    </ul>
-                </div>
-                <?php
-                	if(isset($content)){
-                		echo $content;
-                	}
-                	else{
-                		echo "<h1>Content has gone!</h1>";
-                	}
-                ?>
+        	<div class="row clearfix">
+			
+				<!--Content Side-->
+                <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                	<div class="blog-single">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/news-8.jpg" alt="" />
+							</div>
+							<div class="post-date">14.11.2019</div>
+							<h3>lorem ipsum</h3>
+							<div class="text">
+								<p>TEXT NEWS!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+							</div>
+							<div class="post-meta-option">
+								<div class="author">
+									<div class="author-image"><img src="images/resource/author-2.jpg" alt="" /></div>
+									by Random User
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+					<!--Comments Area-->
+					<div class="comments-area">
+						<div class="group-title">
+							<h2>Reviews</h2>
+						</div>
+
+					<!-- Comment Form -->
+					<div class="comment-form">	
+						<div class="group-title">
+							<h2>Leave A Reply</h2>
+						</div>
+
+						<form method="post" action="contact.php">
+							<div class="row clearfix">
+								<div class="col-lg-12 col-md-12 col-sm-12 form-group">
+									<textarea name="message" placeholder="Comment..."></textarea>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-12 form-group">
+									<input type="text" name="username" placeholder="Name" required>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-12 form-group">
+									<input type="email" name="email" placeholder="Email" required>
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12 form-group">
+									<button class="theme-btn btn-style-two" type="submit" name="submit-form">Submit</button>
+								</div>
+							</div>
+						</form>
+
+					</div>
+					
 				</div>
-				<hr>			
-			</div>
-		</div>
-	</section>
-	<!--End Gallery Section-->
-	
-	<!--Counter Section-->
-	<section class="counter-section">
-		<!--Title Box-->
-		<div class="title-box" style="background-image: url(images/background/1.jpg)">
-			<div class="auto-container">
-				<h2>Send your news to<br>dizitalnews@gmail.com</h2>
-			</div>
-		</div>
-	</section>
-	<!--End Counter Section-->
-	
+				
 	<!--Main Footer-->
     <footer class="main-footer alternate">
     
@@ -242,20 +243,19 @@
 			
 		</div>
 	</footer>
-			
 	
 </div>
 <!--End pagewrapper-->
+
 <script src="js/jquery.js"></script>
 <script src="js/popper.min.js"></script>
-<script src="js/mixitup.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="js/jquery.fancybox.js"></script>
 <script src="js/appear.js"></script>
+<script src="js/isotope.js"></script>
 <script src="js/owl.js"></script>
 <script src="js/wow.js"></script>
-<script src="js/jquery-ui.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

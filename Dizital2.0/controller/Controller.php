@@ -2,7 +2,8 @@
 class Controller
 {
     public static function StartSite(){
-        $array=Category::getAllCategory();//писок всех категорий    
+        //$arr=Category::getAllCategory();//писок всех категорий    
+        $arr=News::getLast10News();
         include_once 'view/start.php';
     }
     public static function AllCategory(){
@@ -24,5 +25,21 @@ class Controller
     }
     public static function error404(){
         include_once 'view/error404.php';
+    }
+    public static function InsertComment($c,$id){
+        Comments::InsertComment($c,$id);
+        header('Location:news?id='.$id.'#ctable');
+    }
+    public static function Comments($newsid){
+        $arr = Comments::getCommentByNewsID($newsid);
+        ViewComments::CommentByNews($arr);
+    }
+    public static function CommentsCount($newsid){
+        $arr =Comments::getCommentsCountByNewsID($newsid);
+        ViewComments::CommentsCount($arr);
+    }
+    public static function CommentsCountWithAncor($newsid){
+        $arr =Comments::getCommentsCountByNewsID($newsid);
+        ViewComments:;CommentsCountWithAncor($arr);
     }
 }

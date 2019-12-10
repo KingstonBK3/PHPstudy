@@ -1,23 +1,27 @@
 <?php
 class ViewNews{
 	public static function NewsByCategory($arr){
+		//print_r($arr);
 		foreach ($arr as $value) {
-			echo '<img src="data:images/'.
-			($value['img']).'"width=150 /><br>';
+			if($value['img']!=""){
+			echo '<img src="data:images/jpeg;base64,'.base64_encode($value['img']).'" width=500 /><hr>';
+		}
 			echo "<h2>".$value['title']."</h2>";
-			echo "<a href='news?id=".$value['id']."'></a><br>";
+			Controller::CommentsCount($value['id']);
+			echo "<a class='read_more' href='news?id=".$value['id']."'>More</a><br><br>";
 		}
 	}
 	public static function AllNews($arr){
 		foreach ($arr as $value) {
 			echo "<li>".$value['title'];
-			echo "<a href='news?id=".$value['id']."'></a></li><br>";
+			Controller::CommentsCount($value['id']);
+			echo "<a href='news?id=".$value['id']." ></a></li><br>";
 		}
 	}
 	public static function ReadNews($n){
 		echo "<h2>".$n['title']."<h2>";
-		//
-		echo '<br><img src ="data:images/'.$n['img'].'" width=150/><nr>';
+		Controller::CommentsCountWithAncor($n['id']);
+		echo '<br><img src="data:images/jpeg;base64,'.base64_encode($n['img']).'" width=500 /><br>';
 		echo "<p>".$n['text']."</p>";
 	}
 }
